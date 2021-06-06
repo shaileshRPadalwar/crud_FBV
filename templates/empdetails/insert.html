@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% extends 'empdetails/base.html' %}
+{% block body_block %}
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div align="center">
+<h1 align="center">Fill the details of employee correct !!</h1>
+    <form method="POST">
+<table>
+
+{{ form }}
+    {% csrf_token %}
+</table>
+        <input type="submit" value="submit" class="btn btn-success">
+        </form>
+    </div>
+
+</body>
+</html>
+{% endblock body_block %}
